@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-class AuthService {
+class AuthUserService {
   static const String _baseUrl = 'https://yourapi.com/api';
   static const String _loginEndpoint = '/login';
 
@@ -12,7 +12,7 @@ class AuthService {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: jsonEncode(<String, String>{
-        'email': username,
+        'username': username,
         'password': password,
       }),
     );
