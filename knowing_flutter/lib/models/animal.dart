@@ -1,5 +1,6 @@
 abstract class Animal {
   void alimentar();
+  void cruzar(dynamic animal);
 }
 
 mixin Cauda {
