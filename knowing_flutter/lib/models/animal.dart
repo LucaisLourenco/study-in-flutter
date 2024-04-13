@@ -1,5 +1,5 @@
 abstract class Animal {
-  void alimentar(String nome);
+  void alimentar();
 }
 
 mixin Cauda {

@@ -9,8 +9,8 @@ class Cachorro extends Mamifero with Cauda {
   Cachorro(this.nome, this.idade, this.raca);
 
   @override
-  void amamentar(String nome) {
-    print('$nome está amamentando...');
+  void amamentar() {
+    print('Cachorro amamentando...');
   }
 
   String get getNome => this.nome;
