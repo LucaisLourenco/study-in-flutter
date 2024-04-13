@@ -1,4 +1,4 @@
-import 'package:knowing_flutter/models/Animal.dart';
+import 'package:knowing_flutter/models/animal.dart';
 
 abstract class Mamifero implements Animal {
 
