@@ -5,13 +5,10 @@ class AuthUserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Obtém as dimensões da tela
-    final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    // Define a largura e altura máxima para o formulário de login
     const maxFormWidth = 400.0;
-    final maxFormHeight = screenHeight * 0.7; // 70% da altura da tela
+    final maxFormHeight = screenHeight * 0.7;
 
     return Scaffold(
       body: Center(
@@ -31,7 +28,7 @@ class AuthUserScreen extends StatelessWidget {
                   children: <Widget>[
                     Flexible(
                       child: Image.asset(
-                        'assets/logo.png', // Ajuste para o caminho correto do seu logo
+                        'assets/logo.png',
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -57,7 +54,7 @@ class AuthUserScreen extends StatelessWidget {
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        hintText: "Email",
+        hintText: 'Email',
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
@@ -68,7 +65,7 @@ class AuthUserScreen extends StatelessWidget {
       obscureText: true,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        hintText: "Senha",
+        hintText: 'Senha',
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
@@ -86,7 +83,7 @@ class AuthUserScreen extends StatelessWidget {
           Navigator.of(context).pushReplacementNamed('/home');
         },
         child: const Text(
-          "Login",
+          'Login',
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
