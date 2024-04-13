@@ -6,5 +6,5 @@ void main() {
   var cachorroDois = new Cachorro('Focus', 6, 'Labrador');
   var gato = new Gato('Jovino', 5, 'indefinido');
 
-  cachorroUm.cruzar(cachorroDois);
+  cachorroUm.cruzar(gato);
 }
