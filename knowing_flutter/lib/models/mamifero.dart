@@ -9,7 +9,7 @@ abstract class Mamifero implements Animal {
   @override
   void cruzar(dynamic animal) {
     if (this.runtimeType == animal.runtimeType) {
-      print('Um novo membro deve surgir');
+      print('Um novo membro deve surgir.');
     } else {
       print('Não é possível cruzar animais de espécies diferentes.');
     }

@@ -1,9 +1,10 @@
 import 'package:knowing_flutter/models/cachorro.dart';
+import 'package:knowing_flutter/models/gato.dart';
 
 void main() {
-  var cachorro = new Cachorro('Marley', 9, 'Labrador');
+  var cachorroUm = new Cachorro('Marley', 9, 'Labrador');
+  var cachorroDois = new Cachorro('Focus', 6, 'Labrador');
+  var gato = new Gato('Jovino', 5, 'indefinido');
 
-  cachorro.alimentar();
-  cachorro.amamentar();
-  cachorro.abanarCauda();
+  cachorroUm.cruzar(cachorroDois);
 }
